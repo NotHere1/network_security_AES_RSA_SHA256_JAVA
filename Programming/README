@@ -1,0 +1,77 @@
+Jusan Ng (jn2427) Network Security HW1
+
+
+
+RSA KEY
+
+The RSA keys for both clients were generated using a java file named Generate_RSA_Key_Pair.java. 
+
+
+RSA KEY
+
+The RSA keys for both clients were generated using a java file named Generate_RSA_Key_Pair.java. 
+
+The program uses the native java KeyPairGenerator class to create both the RSA public and private keys for both clients. I ran the program twice, each time generated a new key pair  for each of the client.
+
+[important]
+In order for the program to run correctly, each client’s RSA key pair must reside on the same directory as the client#.java file. 
+
+The RSA key pairs names are client1_public.key, client1_private.key, client2_public.key, and client2_private.key
+
+HOW TO RUN THE PROGRAMS
+
+The program is consists of three main java files, the [server.java], [client1.java], and [client2.java]. 
+
+The program can be compiled using the ‘make’ command. The program must be started in the following order:
+
+Server:
+java server <port> <mode>
+
+Client1
+java client1 <server hostname> <port>
+
+Client2
+java client2 <server hostname> <port> <16 char pwd> <filepath>
+
+A file name ‘serverdata’ must reside in the same working directory as the server.java file.
+
+EXTERNAL FILES
+
+AES.java, RSA.java, and Client_Handler.java
+
+AES.java and RSA.java
+External files used by both client1 and client2 to handle all the crypto functionalities.
+
+Client_Handler.java 
+A helper class for the server.java file. It performs all the basic file transformation tasks for the server.java file.
+
+The program uses the native java KeyPairGenerator class to create both the RSA public and private keys for both clients. I ran the program twice, each time generated a new key pair  for each of the client. 
+
+HOW TO RUN THE PROGRAMS
+
+The program is consists of three main java files, the [server.java], [client1.java], and [client2.java]. 
+
+The program can be compiled using the ‘make’ command. The program must be started in the following order:
+
+Server:
+java server <port> <mode>
+
+Client1
+java client1 <server hostname> <port>
+
+Client2
+java client2 <server hostname> <port> <16 char pwd> <filepath>
+
+In order for the program to run correctly, each client’s RSA key pair must reside on the same directory as the client#.java file. 
+
+A file name ‘serverdata’ must reside in the same working directory as the server.java file.
+
+EXTERNAL FILES
+
+AES.java, RSA.java, and Client_Handler.java
+
+AES.java and RSA.java
+External files used by both client1 and client2 to handle all the crypto functionalities.
+
+Client_Handler.java 
+A helper class for the server.java file. It performs all the basic file transformation tasks for the server.java file.
